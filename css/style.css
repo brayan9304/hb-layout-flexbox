@@ -1,3 +1,65 @@
-h1{
-    color: blue;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
 }
+header, footer, article{
+    background-color: #303F9F;
+}
+
+header, .container{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.container{
+    margin-top: 100px;
+}
+header{
+    text-align: center;
+    position: fixed;
+    height: 80px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section-1{
+    margin-top: 20px;
+    height: 300px;
+    display: flex;
+}
+.section-2{
+    margin-top: 20px;
+    display: flex;
+    height: 120px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    height: 200px;
+}
+.section-1 article{
+    width: 502px;
+    height: 100%;
+}
+.section-2 article{
+    width: 328px;
+    height: 100%;
+}
+.right-space{
+    margin-right: 20px;
+}
+footer article{
+    width: 150px;
+    height: 150px;
+    background-color: #0288D1;
+}
+
+@media (max-width: 700px) {
+    .section-1, .section-2{
+        flex-direction: column;
+    }
+
+  }
