@@ -27,21 +27,14 @@ header{
     transform: translateX(-50%);
 }
 
-.section-1 {
-    margin-top: 20px;
-    display: flex;
-}
-
-.section-2 {
+.section-1, .section-2, footer {
     margin-top: 20px;
     display: flex;
 }
 
 footer{
-    display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
     height: 200px;
 }
 
@@ -74,7 +67,6 @@ footer article{
         margin-bottom: 20px;
     }
     .section-1, .section-2{
-
         flex-direction: column;
     }
     .section-2 article, .section-1 article{
